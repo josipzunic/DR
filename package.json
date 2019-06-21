@@ -1,0 +1,17 @@
+{
+  "name": "drsock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "client.js",
+  "scripts": {
+    "start": "node ./server.js",
+    "startClient": "node ./client.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "net": "^1.0.2"
+  }
+}
