@@ -10,7 +10,7 @@ const serverSocket = net.createServer(conn => {
             if(err) {
                 throw err;
             }
-            console.log(stdout)
+            conn.write(stdout);
         });
     })
 

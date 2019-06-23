@@ -1,6 +1,5 @@
 const net = require("net")
 
-
 const client = new net.Socket();
 
 const host = "localhost";
@@ -20,6 +19,11 @@ client.connect(port, host, () =>{
         else {
             client.write(data);
         }
-
+        
     })
-})
+    client.on("data", data =>{
+        console.log(data.toString());
+    }) 
+
+
+}) 
